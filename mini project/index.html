@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD APP</h1>
+    <form id="crud-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="gender" placeholder="Gender" required>
+      <input type="text" id="city" placeholder="City" required>
+      <input type="number" id="mobile" placeholder="Mobile Number" required>
+      <button class="btn" type="submit">Add</button>
+      <button class="btn" onclick="reset()" type="submit">RESET</button>
+    </form>
+  </div>
+
+  <div class="tablelist">
+    <h2>User List</h2>
+    <table id="user-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>Mobile Number</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="user-list"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
